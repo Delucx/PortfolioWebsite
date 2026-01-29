@@ -3,61 +3,60 @@ import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { ExternalLink, Github, Play } from "lucide-react";
-
 export function Projects() {
   const projects = [
     {
       title: "Beast of Reverie",
       description:
         "A group project where I developed core gameplay mechanics including player movement and advanced traversal systems such as grappling and gliding. Worked on animation systems (sprite-based and procedural) and collaborated in a team environment to plan, implement, and iterate gameplay features.",
-      image: "https://images.unsplash.com/photo-1711936385455-7843da8cbe47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW50YXN5JTIwYmVhc3QlMjBjcmVhdHVyZSUyMGdhbWV8ZW58MXx8fHwxNzY5NzAwMjc5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "src/assets/Beast_of_Reverie_Cover.jpg",
       tags: ["Godot", "GDScript", "Team Project"],
-      github: "#",
+      github: null,
       demo: null,
     },
     {
       title: "Godot 2D Game Platform",
       description:
         "A personal project where I created a simple game to expand my skills with a basic understanding of Godot and GDScript to construct a complete 2D platform game and learn the core mechanics.",
-      image: "https://images.unsplash.com/photo-1642678730255-40a9e1847fb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaXhlbCUyMGFydCUyMHBsYXRmb3JtZXIlMjBnYW1lfGVufDF8fHx8MTc2OTcwMDI4NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            image: "src/assets/2D_Platform_Cover.jpg",
       tags: ["Godot", "GDScript", "2D", "Personal Project"],
-      github: "#",
+      github: null,
       demo: null,
     },
     {
       title: "Godot 4 Mini Game Projects",
       description:
         "A collection of simple games developed to gain a basic understanding of Godot by learning the basics of programming fundamentals through practical game development.",
-      image: "https://images.unsplash.com/photo-1673350808686-209dc177c898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpZSUyMGdhbWUlMjBkZXZlbG9wbWVudCUyMHNjcmVlbnxlbnwxfHx8fDE3Njk1ODA2Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "src/assets/Godot_4_Mini_Games_Cover.jpg",
       tags: ["Godot", "GDScript", "Personal Project"],
-      github: "#",
+      github: null,
       demo: null,
     },
     {
       title: "ITech OJT Feedback and Management Portal",
       description:
         "An academic project where I worked as a back-end developer to create a website that handles students' feedback forms and documents, with automated data analytics management for the OJT Coordinator.",
-      image: "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGJhY2tlbmQlMjBjb2RlfGVufDF8fHx8MTc2OTcwMDI3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "src/assets/OJT_Cover.jpg",
       tags: ["PostgreSQL", "MySQL", "Python", "JavaScript", "NodeJs", "Git"],
-      github: "#",
+      github: null,
       demo: null,
     },
     {
       title: "Number Guessing Game",
       description:
         "A game website developed using HTML, CSS, and JavaScript as an activity project for AWS Cloud Club. Front-end development practice focusing on interactive game logic.",
-      image: "https://images.unsplash.com/photo-1740062446976-94a8837e0dde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxudW1iZXIlMjBndWVzc2luZyUyMGdhbWUlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY5NzAwMjc5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "src/assets/Number_Guessing_Cover.jpg",
       tags: ["HTML", "CSS", "JavaScript", "Personal Project"],
-      github: "#",
+      github: "https://delucx.github.io/Guess-the-Number/home.html",
       demo: null,
     },
     {
       title: "Rock-Paper-Scissor",
       description:
         "A game website developed using HTML, CSS, and JavaScript as an activity project for AWS Cloud Club. Front-end development practice creating a classic game with interactive UI.",
-      image: "https://images.unsplash.com/photo-1614032686099-e648d6dea9b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2NrJTIwcGFwZXIlMjBzY2lzc29ycyUyMGdhbWV8ZW58MXx8fHwxNzY5NzAwMjgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "src/assets/Rock_Paper_Scissor_Cover.jpg",
       tags: ["HTML", "CSS", "JavaScript", "Personal Project"],
-      github: "#",
+      github: "https://delucx.github.io/Rock-Paper-Scissor/",
       demo: null,
     },
   ];
@@ -99,16 +98,23 @@ export function Projects() {
                     ))}
                   </div>
                   <div className="flex gap-3">
-                    <Button variant="outline" size="sm" asChild className="border-primary/30 hover:bg-primary/10">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    {project.github && (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        asChild
+                        className="border-primary/30 hover:bg-primary/10"
                       >
-                        <Github className="h-4 w-4 mr-2" />
-                        Code
-                      </a>
-                    </Button>
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="h-4 w-4 mr-2" />
+                          Code
+                        </a>
+                      </Button>
+                    )}
                     {project.demo && (
                       <Button size="sm" asChild>
                         <a

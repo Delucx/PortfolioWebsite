@@ -34,20 +34,20 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com",
+      value: "jlsrayray@gmail.com",
+      href: "mailto:jlsrayray@gmail.com",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/yourusername",
-      href: "https://github.com",
+      value: "github.com/Delucx",
+      href: "https://github.com/Delucx",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/yourprofile",
-      href: "https://linkedin.com",
+      value: "linkedin.com/in/Julius-Rayray",
+      href: "https://www.linkedin.com/in/julius-rayray-2380a925b/",
     },
   ];
 

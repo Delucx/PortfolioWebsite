@@ -48,9 +48,9 @@ export function About() {
 
             <div className="relative aspect-square rounded-lg overflow-hidden border border-primary/20">
               <ImageWithFallback
-                src="../Assets/Formal photo.jpg"
-                alt="Gaming setup"
-                className="w-full h-full object-cover"
+                src="src/assets/Formal photo.jpg"
+                alt="Profile Photo"
+                className="w-full h-screen object-cover"
               />
             </div>
           </div>
