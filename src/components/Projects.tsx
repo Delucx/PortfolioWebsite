@@ -3,13 +3,21 @@ import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { ExternalLink, Github, Play } from "lucide-react";
+
+import beastCover from "@/assets/Beast_of_Reverie_Cover.jpg";
+import platformCover from "@/assets/2D_Platform_Cover.jpg";
+import miniGamesCover from "@/assets/Godot_4_Mini_Games_Cover.jpg";
+import ojtCover from "@/assets/OJT_Cover.jpg";
+import numberGuessingCover from "@/assets/Number_Guessing_Cover.jpg";
+import rpsCover from "@/assets/Rock_Paper_Scissor_Cover.jpg";
+
 export function Projects() {
   const projects = [
     {
       title: "Beast of Reverie",
       description:
         "A group project where I developed core gameplay mechanics including player movement and advanced traversal systems such as grappling and gliding. Worked on animation systems (sprite-based and procedural) and collaborated in a team environment to plan, implement, and iterate gameplay features.",
-      image: "src/assets/Beast_of_Reverie_Cover.jpg",
+      image: beastCover,
       tags: ["Godot", "GDScript", "Team Project"],
       github: null,
       demo: null,
@@ -18,7 +26,7 @@ export function Projects() {
       title: "Godot 2D Game Platform",
       description:
         "A personal project where I created a simple game to expand my skills with a basic understanding of Godot and GDScript to construct a complete 2D platform game and learn the core mechanics.",
-            image: "src/assets/2D_Platform_Cover.jpg",
+      image: platformCover,
       tags: ["Godot", "GDScript", "2D", "Personal Project"],
       github: null,
       demo: null,
@@ -27,7 +35,7 @@ export function Projects() {
       title: "Godot 4 Mini Game Projects",
       description:
         "A collection of simple games developed to gain a basic understanding of Godot by learning the basics of programming fundamentals through practical game development.",
-      image: "src/assets/Godot_4_Mini_Games_Cover.jpg",
+      image: miniGamesCover,
       tags: ["Godot", "GDScript", "Personal Project"],
       github: null,
       demo: null,
@@ -36,7 +44,7 @@ export function Projects() {
       title: "ITech OJT Feedback and Management Portal",
       description:
         "An academic project where I worked as a back-end developer to create a website that handles students' feedback forms and documents, with automated data analytics management for the OJT Coordinator.",
-      image: "src/assets/OJT_Cover.jpg",
+      image: ojtCover,
       tags: ["PostgreSQL", "MySQL", "Python", "JavaScript", "NodeJs", "Git"],
       github: null,
       demo: null,
@@ -45,7 +53,7 @@ export function Projects() {
       title: "Number Guessing Game",
       description:
         "A game website developed using HTML, CSS, and JavaScript as an activity project for AWS Cloud Club. Front-end development practice focusing on interactive game logic.",
-      image: "src/assets/Number_Guessing_Cover.jpg",
+      image: numberGuessingCover,
       tags: ["HTML", "CSS", "JavaScript", "Personal Project"],
       github: "https://delucx.github.io/Guess-the-Number/home.html",
       demo: null,
@@ -54,7 +62,7 @@ export function Projects() {
       title: "Rock-Paper-Scissor",
       description:
         "A game website developed using HTML, CSS, and JavaScript as an activity project for AWS Cloud Club. Front-end development practice creating a classic game with interactive UI.",
-      image: "src/assets/Rock_Paper_Scissor_Cover.jpg",
+      image: rpsCover,
       tags: ["HTML", "CSS", "JavaScript", "Personal Project"],
       github: "https://delucx.github.io/Rock-Paper-Scissor/",
       demo: null,
