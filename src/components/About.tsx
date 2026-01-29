@@ -1,6 +1,7 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Gamepad2, Code2, Puzzle } from "lucide-react";
 import { Card } from "./ui/card";
+import profilePic from "@/assets/Formal photo.jpg";
 
 export function About() {
   const highlights = [
@@ -48,7 +49,7 @@ export function About() {
 
             <div className="relative aspect-square rounded-lg overflow-hidden border border-primary/20">
               <ImageWithFallback
-                src="src/assets/Formal photo.jpg"
+                src={profilePic}
                 alt="Profile Photo"
                 className="w-full h-screen object-cover"
               />
