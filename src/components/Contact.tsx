@@ -13,12 +13,23 @@ export function Contact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! I'll get back to you soon.");
-    setFormData({ name: "", email: "", message: "" });
+
+    const res = await fetch("https://formspree.io/f/xaqjdqgy", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      alert("Thank you for your message!");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      alert("Something went wrong. Try again.");
+    }
   };
 
   const handleChange = (
@@ -156,7 +167,7 @@ export function Contact() {
               <span>Game Developer Portfolio</span>
             </div>
             <p className="text-center text-muted-foreground text-sm">
-              © 2024 Your Name. Built with passion for games.
+              © 2025 Julius Miguel Rayray. Built with passion for games.
             </p>
           </div>
         </div>

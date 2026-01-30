@@ -1,7 +1,7 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Gamepad2, Code2, Puzzle } from "lucide-react";
 import { Card } from "./ui/card";
-import profilePic from "@/assets/Formal photo.jpg";
+import profilePic from "@/assets/Formal_photo.jpg";
 
 export function About() {
   const highlights = [

@@ -67,7 +67,12 @@ export function Hero() {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild className="hover:bg-primary/10">
-              <a href="jlstrayray@gmail.com">
+              <a 
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=jlsrayray@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Send me an email"
+              >
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
