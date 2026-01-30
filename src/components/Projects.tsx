@@ -55,7 +55,7 @@ export function Projects() {
         "A game website developed using HTML, CSS, and JavaScript as an activity project for AWS Cloud Club. Front-end development practice focusing on interactive game logic.",
       image: numberGuessingCover,
       tags: ["HTML", "CSS", "JavaScript", "Personal Project"],
-      github: "https://delucx.github.io/Guess-the-Number/home.html",
+      github: "https://github.com/Delucx/Guess-the-Number",
       demo: null,
     },
     {
@@ -64,7 +64,7 @@ export function Projects() {
         "A game website developed using HTML, CSS, and JavaScript as an activity project for AWS Cloud Club. Front-end development practice creating a classic game with interactive UI.",
       image: rpsCover,
       tags: ["HTML", "CSS", "JavaScript", "Personal Project"],
-      github: "https://delucx.github.io/Rock-Paper-Scissor/",
+      github: "https://github.com/Delucx/Rock-Paper-Scissor",
       demo: null,
     },
   ];
