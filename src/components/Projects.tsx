@@ -4,12 +4,16 @@ import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { ExternalLink, Github, Play } from "lucide-react";
 
+// Importing images
 import beastCover from "@/assets/Beast_of_Reverie_Cover.jpg";
 import platformCover from "@/assets/2D_Platform_Cover.jpg";
 import miniGamesCover from "@/assets/Godot_4_Mini_Games_Cover.jpg";
 import ojtCover from "@/assets/OJT_Cover.jpg";
 import numberGuessingCover from "@/assets/Number_Guessing_Cover.jpg";
 import rpsCover from "@/assets/Rock_Paper_Scissor_Cover.jpg";
+import flip7Cover from "@/assets/Flip7Cover.png";
+import mineSweeperCover from "@/assets/MineSweeperCover.png";
+import ticTacToeCover from "@/assets/tictactoe_cover.png";
 
 export function Projects() {
   const projects = [
@@ -66,6 +70,33 @@ export function Projects() {
       tags: ["HTML", "CSS", "JavaScript", "Personal Project"],
       github: "https://github.com/Delucx/Rock-Paper-Scissor",
       demo: null,
+    },
+    {
+      title: "Flip 7",
+      description:
+        "A card game where players compete to reach the target score by drawing cards, banking points, and avoiding busts. Features unique mechanics like the Flip 7 bonus.",
+      image: flip7Cover,
+      tags: ["Card Game", "Multiplayer", "Windows"],
+      github: null,
+      demo: "https://delucx.itch.io/flip-7",
+    },
+    {
+      title: "Mine Sweeper",
+      description:
+        "A simple puzzle game created using assets from Chequered Ink. Available for both Windows and Android.",
+      image: mineSweeperCover,
+      tags: ["Puzzle", "Windows", "Android"],
+      github: null,
+      demo: "https://delucx.itch.io/mine-sweeper",
+    },
+    {
+      title: "Tic Tac Toe",
+      description:
+        "A cross-platform game built with Godot 4.x. Features PvP, PvE, and online multiplayer modes with unique mechanics to prevent traditional draws.",
+      image: ticTacToeCover,
+      tags: ["Godot", "Multiplayer", "Windows", "Android"],
+      github: null,
+      demo: "https://delucx.itch.io/tic-tac-toe",
     },
   ];
 
